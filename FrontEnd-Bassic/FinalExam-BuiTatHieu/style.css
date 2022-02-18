@@ -1,0 +1,415 @@
+/* Fonts Form Google Font ::- https://fonts.google.com/  -:: */
+@import url('https://fonts.googleapis.com/css?family=Abel|Abril+Fatface|Alegreya|Arima+Madurai|Dancing+Script|Dosis|Merriweather|Oleo+Script|Overlock|PT+Serif|Pacifico|Playball|Playfair+Display|Share|Unica+One|Vibur');
+/* End Fonts */
+/* Start Global rules */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* End Global rules */
+
+/* Start body rules */
+body {
+    background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    margin-left: 15%;
+    margin-right: 15%;
+
+    font-family: 'Vibur', cursive;
+/*   the main font */
+    font-family: 'Abel', sans-serif;
+opacity: .95;
+/* background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%); */
+}
+
+  /* Style the header */
+.header
+{
+    border-bottom: 1px solid black;
+}
+.header:after 
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+.header .head
+{
+    height: 50px;
+}
+.header .head.left
+{
+    float: left;
+    padding: 5px;
+}
+.header .head.left.logo
+{
+    width: 10%;
+    padding: 0px;
+}
+.header .head.left.logo .imgLogo
+{
+    width: 100%;
+    height: 100%;
+}
+.header .head.left.bar
+{
+    text-align: center;
+    width: 5%;
+    padding-top: 3px;
+    padding-left: 5px;
+    border-left: 1px solid black;
+}
+.header .head.left.bar #iconBar
+{
+    font-size: 250%;
+}
+.header .head.right
+{
+    float: right;
+    padding: 5px;
+}
+.header .head.right.bell
+{
+    width: 6%;
+}
+.header .head.right.avt
+{
+    width: 6%;
+}
+.header .head.right.bell i
+{
+    font-size: 37px;
+}
+.header .head.right.user
+{
+    width: 10%;
+    padding-top: 15px;
+}
+.header .head.right.avt .img-avt
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 90%;
+}
+
+@media (max-width: 600px) {
+    .head.left.logo{
+        width: 20%;
+    }
+    .head.left.nav{
+        width: 20%;        
+    }
+    .head.right.bell, .head.right.avt {
+      width: 10%;
+    }
+    .head.right.bell, .head.right.user {
+        width: 15%;
+      }
+  }
+
+.column
+{
+    float: left;
+    padding: 10px;
+    margin-top: 10px;
+}
+.column.menu
+{
+    width: 10%;
+    text-align: center;
+}
+.column.menu .menu-item
+{
+    margin-top: 10px;
+    border-bottom: 1px solid black;
+    padding: 3px;
+}
+.column.menu .menu-item .menu-icon
+{
+    font-size: 200%;
+}
+
+.column.main
+{
+    width: 88%;
+    margin-left: 2%;
+    /* background-color: #a8edea; */
+
+}
+.column.main .menu-icon
+{
+    font-size: 200%;
+
+}
+.column.main .content-table
+{
+    margin-top: 10px;
+    border-top: 1px solid black;
+}
+.column.main .content-table .sub-header
+{
+    height: 30px;
+    padding: 5px;
+    border-bottom: 1px solid black;
+}
+.column.main .content-table .sub-menu
+{
+    height: 36px;
+    padding: 5px;
+    border-bottom: 1px solid black;
+}
+/* .column.main .content-table .sub-menu>div>i
+{
+    font-size: 50px;
+} */
+.column.main .content-table .sub-menu .left
+{
+    float: left;
+}
+.column.main .content-table .sub-menu .left>button
+{
+    width: 30px;
+}
+.column.main .content-table .sub-menu .right
+{
+    float: right;
+    padding-right: 15px;
+    font-size: 150%;
+    
+
+}
+.subMenu:after
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+.body:after
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+.column.main .content-table #listTable
+{
+    height: 600px;
+    width: 100%;
+    overflow-y: scroll;
+}
+table
+{
+    /* margin: 5px; */
+    width: 100%;
+}
+table tr th, td
+{
+    border: solid 1px black;
+    padding: 3px;
+}
+th
+{
+    background-color: #c7e0fa;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.footer
+{
+    margin-top: 10px;;
+    background-color: #b8c1fd;
+    padding: 10px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .column.menu, .column.main {
+      width: 100%;
+    }
+
+    .menu-item{
+      display: inline-block;
+      border-bottom: none;
+      margin-right: 0px 5px 0px 5px;
+      border-right: #a5cbee 1px solid;
+    }
+
+    .menuI-item i{
+      font-size: 25px;
+    }
+  }
+
+ /* The Modal (background) */
+ .modal
+ {
+    display: none;   
+    /* Ẩn theo mặc định */
+    position: fixed; /*  Ở lại */
+    z-index: 1; /* Trên đầu */
+    padding-top: 100px;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Bật cuộn nếu cần */
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+@media (max-width: 700px)
+{
+    .modal {
+      width: 100%;
+    }
+}
+
+.modal .modal-content
+{
+    background-color: rgb(197, 224, 252);
+    margin: auto;
+    margin-top: 10%;
+    padding: 10px 30px 10px 30px;
+    border: 1px solid rgb(185, 186, 233);
+    border-radius: 3px;
+    width: 25%;
+    box-shadow: 10px 5px 5px rgb(146, 164, 247);
+}
+.modal .modal-content .close
+{
+    color: black;
+    float: right;
+    font-size: 25px;
+    font-weight: bold;
+}
+.close:hover, .close:focus
+{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+#modal-name, .modal-name, #info-name, #info-content
+{
+    text-align: center;
+}
+.err-info
+{
+    color: red;
+}
+.errInfoIcon{
+    color: red;
+    cursor: none;
+}
+
+.infoIcon{
+  color: rgb(24, 233, 24);
+  cursor: none;
+}
+
+.groupName{
+    color: rgb(55, 55, 241);
+    cursor: pointer;      
+}
+
+#groupDetail{
+    padding: 10px 10px 10px 10px;
+}
+
+#groupName{
+    text-align: center;
+}
+
+.pencil{
+  font-weight: 900; 
+  margin-left: 10px;
+  cursor: pointer;
+}
+i{
+    cursor: pointer;
+}
+button
+{
+    cursor: pointer;
+    /* border: none; */
+    border-radius: 4px;
+    height: 25px;
+    width: 50px;
+}
+.delete-group-modal .modal-content
+{
+    padding: 10px 30px 10px 30px;
+    width: 20%;
+}
+.btn-area
+{
+    margin-top: 10px;
+    margin-left: 30%;
+}
+#btn-search
+{
+    border-radius: 4px;
+    width: 50px;
+    height: 23px;
+}
+.btn-area-del
+{
+    margin-top: 10px;
+    margin-left: 30%;
+}
+input{
+    
+    height: 25px;
+}
+
+/* The Modal (background) */
+.info-msg-modal
+{
+    display: none; 
+    /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0px;
+    top: 0px;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 700px) {
+    .info-msg-modal {
+      width: 100%;
+    }
+}
+
+.info-modal-content
+{
+    background-color: rgb(217, 230, 243);
+    margin: auto;
+    margin-top: 10%;
+    padding: 10px 30px 10px 30px;
+    border: 1px solid rgb(117, 119, 240);
+    border-radius: 3px;
+    width: 19%;
+    box-shadow: 10px 5px 5px rgb(146, 164, 247);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
